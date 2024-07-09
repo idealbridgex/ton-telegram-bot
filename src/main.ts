@@ -48,6 +48,7 @@ async function main(): Promise<void> {
     bot.onText(/\/my_wallet/, handleShowMyWalletCommand);
 
     bot.onText(/\/start/, (msg: TelegramBot.Message) => {
+        console.log("*******************")
         bot.sendMessage(
             msg.chat.id,
             `
